@@ -8,5 +8,6 @@ namespace Minesweeper1
 {
     class Class2
     {
+        //blabla
     }
 }
