@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<configuration>
+  <configSections>
+    <section name="logging" type="Hci.Logging.Config.LoggingSection, Hci.Logging" />
+  </configSections>
+
+  <!-- Log4Net -->
+  <logging logSystem="Hci.Logging.Log4Net.Log4NetLogSystem, Hci.Logging.Log4Net">
+    <parameters>
+      <add name="ConfigFilePath"
+           value="String: The path of the .log4net configuration file; an empty string to use the application configuration file. Default value is empty." />
+      <add name="Watch"
+           value="Boolean: True if log4net must watch the configuration file for changes at runtime. Default value is True." />
+    </parameters>
+  </logging>
+
+  <!-- NLog -->
+  <loging logSystem="Hci.Logging.NLog.NlogLogSystem, Hci.Logging.NLog" />
+</configuration>
